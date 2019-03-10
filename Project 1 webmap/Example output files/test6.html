@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_b767d15b2dce4fafbf7d533cadd285bc {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_b767d15b2dce4fafbf7d533cadd285bc" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_b767d15b2dce4fafbf7d533cadd285bc = L.map(
+        'map_b767d15b2dce4fafbf7d533cadd285bc', {
+        center: [13.0621233, 77.5580256],
+        zoom: 18,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+
+    
+    var tile_layer_39fd598c499e40d0bab24db62be9401b = L.tileLayer(
+        'https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_b767d15b2dce4fafbf7d533cadd285bc);
+    
+        var marker_1c913562818540d9a680420938919a5d = L.marker(
+            [12.983349, 77.559438],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b767d15b2dce4fafbf7d533cadd285bc);
+        
+    
+
+                var icon_de72a2389fa04a0e98d241a48e97d61a = L.AwesomeMarkers.icon({
+                    icon: 'cloud',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_1c913562818540d9a680420938919a5d.setIcon(icon_de72a2389fa04a0e98d241a48e97d61a);
+            
+    
+            var popup_14f418f3acfa4db6a848d3162bd2f820 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_29fbc58b6ad44dbdbee79e2ebd05bf6f = $(`<div id="html_29fbc58b6ad44dbdbee79e2ebd05bf6f" style="width: 100.0%; height: 100.0%;">  GOLDEN-HEIGHTS</div>`)[0];
+                popup_14f418f3acfa4db6a848d3162bd2f820.setContent(html_29fbc58b6ad44dbdbee79e2ebd05bf6f);
+            
+
+            marker_1c913562818540d9a680420938919a5d.bindPopup(popup_14f418f3acfa4db6a848d3162bd2f820)
+            ;
+
+            
+        
+    
+        var marker_85bba16869d841518ca1a2e9073636cc = L.marker(
+            [13.062123300000001, 77.5580256],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b767d15b2dce4fafbf7d533cadd285bc);
+        
+    
+
+                var icon_b9965783212444879f9cb68608f645dd = L.AwesomeMarkers.icon({
+                    icon: 'cloud',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_85bba16869d841518ca1a2e9073636cc.setIcon(icon_b9965783212444879f9cb68608f645dd);
+            
+    
+            var popup_6ed7c4fde39e440d91677398ac54a100 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_bd63d226816c495dad5f5fd1701ff073 = $(`<div id="html_bd63d226816c495dad5f5fd1701ff073" style="width: 100.0%; height: 100.0%;">  Nilaam</div>`)[0];
+                popup_6ed7c4fde39e440d91677398ac54a100.setContent(html_bd63d226816c495dad5f5fd1701ff073);
+            
+
+            marker_85bba16869d841518ca1a2e9073636cc.bindPopup(popup_6ed7c4fde39e440d91677398ac54a100)
+            ;
+
+            
+        
+    
+        var marker_b4f7c180d7444f8da65de4afed1e2a90 = L.marker(
+            [13.061939, 77.55875],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_b767d15b2dce4fafbf7d533cadd285bc);
+        
+    
+
+                var icon_0b91ec8e0ede4c16ac26052524f0fe50 = L.AwesomeMarkers.icon({
+                    icon: 'cloud',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b4f7c180d7444f8da65de4afed1e2a90.setIcon(icon_0b91ec8e0ede4c16ac26052524f0fe50);
+            
+    
+            var popup_6d44869fe18342c88a058ef1bab9f312 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_1003ddf3ce434ac8995db7339317acfa = $(`<div id="html_1003ddf3ce434ac8995db7339317acfa" style="width: 100.0%; height: 100.0%;">  St-Philomenas</div>`)[0];
+                popup_6d44869fe18342c88a058ef1bab9f312.setContent(html_1003ddf3ce434ac8995db7339317acfa);
+            
+
+            marker_b4f7c180d7444f8da65de4afed1e2a90.bindPopup(popup_6d44869fe18342c88a058ef1bab9f312)
+            ;
+
+            
+        
+</script>
